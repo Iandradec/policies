@@ -1,8 +1,0 @@
-{
-  "url": "http://example.com/data.json?page=3",
-  "method": "GET",
-  "period": "10h",
-  "body": {
-    "key": "value"
-  }
-}
