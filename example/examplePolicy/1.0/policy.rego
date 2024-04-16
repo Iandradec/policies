@@ -1,1 +1,3 @@
-asass
+package example.examplePolicy
+
+_ := input
