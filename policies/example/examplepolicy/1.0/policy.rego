@@ -1,3 +1,3 @@
 package example.examplepolicy
 
-result := input
+_ := input
