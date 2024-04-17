@@ -1,12 +1,14 @@
 {
-  "type": "VerifiableCredential",
+  "type": "object",
   "properties": {
     "issuer": {
       "type": "string",
       "minLength": 5
+    },
+    "type": {
+      "type": "string",
+      "enum": ["VerifiableCredential"]
     }
   },
-  "required": [
-    "issuer"
-  ]
+  "required": ["issuer", "type"]
 }
