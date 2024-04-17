@@ -2,7 +2,7 @@
   "type": "object",
   "properties": {
     "policy": {
-      "type": "object",
+      "type": "array",
       "properties": {
         "name": {
           "type": "string"
