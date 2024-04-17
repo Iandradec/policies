@@ -3,39 +3,34 @@
   "properties": {
     "policy": {
       "type": "array",
-      "properties": {
+      "items": {
         "name": {
-          "type": "string"
+          "type": "string",
+          "minLength": 5
         },
         "group": {
-          "type": "string"
+          "type": "string",
+          "minLength": 5
         },
         "version": {
-          "type": "string"
+          "type": "string",
+          "minLength": 1
         },
         "repository": {
-          "type": "string"
+          "type": "string",
+          "minLength": 5
         },
         "locked": {
           "type": "boolean"
         },
         "lastUpdate": {
-          "type": "string",
-          "format": "date-time"
+          "type": "object"
         }
-      },
-      "required": [
-        "name",
-        "group",
-        "version",
-        "repository",
-        "locked",
-        "lastUpdate"
-      ]
+      }
     },
     "publicKeyURL": {
       "type": "string",
-      "format": "uri"
+      "minLength": 5
     }
   },
   "required": [
