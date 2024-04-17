@@ -1,85 +1,45 @@
 {
-  "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
   "properties": {
-    "@context": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      }
-    },
-    "id": {
-      "type": "string"
-    },
-    "verificationMethod": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "properties": {
-          "@context": {
-            "type": "string"
-          },
-          "id": {
-            "type": "string"
-          },
-          "type": {
-            "type": "string"
-          },
-          "controller": {
-            "type": "string"
-          },
-          "publicKeyJwk": {
-            "type": "object",
-            "properties": {
-              "kty": {
-                "type": "string"
-              },
-              "kid": {
-                "type": "string"
-              },
-              "crv": {
-                "type": "string"
-              },
-              "x": {
-                "type": "string"
-              },
-              "y": {
-                "type": "string"
-              },
-              "x5u": {
-                "type": "string"
-              }
-            },
-            "required": [
-              "kty",
-              "kid",
-              "crv",
-              "x",
-              "y",
-              "x5u"
-            ]
-          }
+    "policy": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
         },
-        "required": [
-          "@context",
-          "id",
-          "type",
-          "controller",
-          "publicKeyJwk"
-        ]
-      }
+        "group": {
+          "type": "string"
+        },
+        "version": {
+          "type": "string"
+        },
+        "repository": {
+          "type": "string"
+        },
+        "locked": {
+          "type": "boolean"
+        },
+        "lastUpdate": {
+          "type": "string",
+          "format": "date-time"
+        }
+      },
+      "required": [
+        "name",
+        "group",
+        "version",
+        "repository",
+        "locked",
+        "lastUpdate"
+      ]
     },
-    "assertionMethod": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      }
+    "publicKeyURL": {
+      "type": "string",
+      "format": "uri"
     }
   },
   "required": [
-    "@context",
-    "id",
-    "verificationMethod",
-    "assertionMethod"
+    "policy",
+    "publicKeyURL"
   ]
 }
