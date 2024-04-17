@@ -1,3 +1,3 @@
-package example.examplePolicy
+package example.examplepolicy
 
 result := input
