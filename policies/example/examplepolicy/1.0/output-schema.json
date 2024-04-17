@@ -1,13 +1,72 @@
 {
-		  "$schema": "http://json-schema.org/draft-04/schema#",
-		  "type": "object",
-		  "properties": {
-			"foo": {
-			  "type": "string",
-			  "minLength": 5
-			}
-		  },
-		  "required": [
-			"foo"
-		  ]
-		}
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "@context": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "VerifiableCredential"
+      ]
+    },
+    "credentialSubject": {
+      "type": "object",
+      "properties": {
+        "hello": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "hello"
+      ]
+    },
+    "issuanceDate": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "issuer": {
+      "type": "string"
+    },
+    "proof": {
+      "type": "object",
+      "properties": {
+        "created": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "jws": {
+          "type": "string"
+        },
+        "proofPurpose": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        },
+        "verificationMethod": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "created",
+        "jws",
+        "proofPurpose",
+        "type",
+        "verificationMethod"
+      ]
+    }
+  },
+  "required": [
+    "@context",
+    "type",
+    "credentialSubject",
+    "issuanceDate",
+    "issuer",
+    "proof"
+  ]
+}
