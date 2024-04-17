@@ -24,7 +24,7 @@
           "type": "boolean"
         },
         "lastUpdate": {
-          "type": "object"
+          "type": "string"
         }
       }
     },
