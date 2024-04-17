@@ -1,6 +1,6 @@
-package example.examplePolicy
+package example.examplepolicy
 
 allow {
-	1 == 1
+	1 == 2
 }
 result := input
