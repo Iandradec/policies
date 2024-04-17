@@ -5,19 +5,19 @@
       "type": "array",
       "items": {
         "name": {
-          "type": "string",
+          "type": "object",
           "minLength": 5
         },
         "group": {
-          "type": "string",
+          "type": "object",
           "minLength": 5
         },
         "version": {
-          "type": "string",
+          "type": "object",
           "minLength": 1
         },
         "repository": {
-          "type": "string",
+          "type": "object",
           "minLength": 5
         },
         "locked": {
@@ -29,7 +29,7 @@
       }
     },
     "publicKeyURL": {
-      "type": "string",
+      "type": "object",
       "minLength": 5
     }
   },
