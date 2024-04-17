@@ -1,5 +1,5 @@
 {
-  "url": "https://dev.uniresolver.io/#did:web:notarydid.baikal.ari-energy.eu",
+  "url": "http://example.com/data.json?page=3",
   "method": "GET",
   "period": "10h",
   "body": {
