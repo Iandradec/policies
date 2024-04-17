@@ -2,35 +2,36 @@
   "type": "object",
   "properties": {
     "policy": {
-      "type": "array",
-      "items": {
+      "type": "object",
+      "properties": {
         "name": {
-          "type": "object",
-          "minLength": 5
+          "type": "string",
+          "minLength": 1
         },
         "group": {
-          "type": "object",
-          "minLength": 5
+          "type": "string",
+          "minLength": 1
         },
         "version": {
-          "type": "object",
+          "type": "string",
           "minLength": 1
         },
         "repository": {
-          "type": "object",
-          "minLength": 5
+          "type": "string",
+          "minLength": 1
         },
         "locked": {
           "type": "boolean"
         },
         "lastUpdate": {
-          "type": "object"
+          "type": "string",
+          "minLength": 1
         }
       }
     },
     "publicKeyURL": {
-      "type": "object",
-      "minLength": 5
+      "type": "string",
+      "minLength": 1
     }
   },
   "required": [
