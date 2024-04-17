@@ -1,7 +1,5 @@
 {
   "trustlist": [
-    "did:web:123",
-    "did:web:notarydid.baikal.ari-energy.eu",
-    "did:web:abc"
+    "did:web:notarydid.baikal.ari-energy.eu"
   ]
 }

@@ -1,76 +1,13 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema#",
-  "type": "object",
-  "properties": {
-    "@context": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      }
-    },
-    "credentialSubject": {
-      "type": "object",
-      "properties": {
-        "hello": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "hello"
-      ]
-    },
-    "issuanceDate": {
-      "type": "string",
-      "format": "date-time"
-    },
-    "issuer": {
-      "type": "string",
-      "pattern": "^did:web:.+"
-    },
-    "proof": {
-      "type": "object",
-      "properties": {
-        "created": {
-          "type": "string",
-          "format": "date-time"
-        },
-        "jws": {
-          "type": "string"
-        },
-        "proofPurpose": {
-          "type": "string"
-        },
-        "type": {
-          "type": "string",
-          "enum": [
-            "JsonWebSignature2020"
-          ]
-        },
-        "verificationMethod": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "created",
-        "jws",
-        "proofPurpose",
-        "type",
-        "verificationMethod"
-      ]
-    },
-    "type": {
-      "type": "string",
-      "enum": [
-        "VerifiableCredential"
-      ]
-    }
-  },
-  "required": [
-    "@context",
-    "credentialSubject",
-    "issuanceDate",
-    "issuer",
-    "proof",
-    "type"
-  ]
-}
+		  "$schema": "http://json-schema.org/draft-04/schema#",
+		  "type": "object",
+		  "properties": {
+			"foo": {
+			  "type": "string",
+			  "minLength": 5
+			}
+		  },
+		  "required": [
+			"foo"
+		  ]
+		}
