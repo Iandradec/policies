@@ -1,12 +1,12 @@
 {
   "type": "object",
   "properties": {
-    "foo": {
+    "issuer": {
       "type": "string",
       "minLength": 5
     }
   },
   "required": [
-    "foo"
+    "issuer"
   ]
 }

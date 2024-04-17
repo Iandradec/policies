@@ -1,3 +1,6 @@
 package example.examplePolicy
 
-_ := input
+allow {
+	1 == 2
+}
+result := input
